@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Дисциплинарный контроль</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Добро пожаловать</h2>
+        <p>
+            Дисциплинарный контроль хранит данные о ваших дисциплинах
+        </p>
+        <p>Нажми на кноплку Disceplines, чтобы посмотреть ваши дисциплины</p>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Disceplines", "Index", "Disceplines")</li>         
+        </ul>
+    </div>
+</div>

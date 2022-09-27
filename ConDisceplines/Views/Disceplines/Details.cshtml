@@ -1,0 +1,42 @@
+﻿@model ConDisceplines.Models.Discepline
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Discepline</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameDiscepline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameDiscepline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Control)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Control)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
